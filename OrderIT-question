@@ -1,0 +1,112 @@
+Chef Alex meticulously documented the sequential instructions for a new recipe, ensuring optimal culinary outcomes through systematic organization. However, during a busy period in the kitchen, the list became disorganized. As the instructions are now out of sequence, Alex requires assistance to restore them to their proper order.
+
+The list may be corrected solely by removing a contiguous segment of instructions and reinserting it at any other location within the list. Each cut-and-insert operation incurs a fixed cost of one unit.
+
+Determine the minimum number of cut-and-insert operations required to restore the shuffled list of instructions to their original sequence.
+
+Constraints
+1<= N <= 10
+
+Input
+First line contains a single integer N representing the number of instructions in the list
+
+Next line contains the word "shuffled"
+
+Next N lines contain strings including spaces representing the instruction
+
+Next line contains the word "original"
+
+Next N lines contain string including spaces representing an instruction
+
+Output
+Single Integer which represents the minimum cost to rearrange.
+
+Time Limit (secs)
+1
+
+Examples
+Example 1
+
+Input
+
+5
+
+shuffled
+
+Whisk the onion
+
+Bake the butter
+
+Season the garlic
+
+Fold the flour
+
+Fold the lettuce
+
+original
+
+Fold the flour
+
+Whisk the onion
+
+Bake the butter
+
+Fold the lettuce
+
+Season the garlic
+
+Output
+
+2
+
+Explanation
+
+From the input you can see the 5 instructions. The two operations on the shuffled instruction list will result on the original instruction list
+
+Cut and insert instruction "Fold the flour" to the top of list.
+Cut and insert instruction "Fold the lettuce" above "Season the garlic"
+The above is one of the ways to rearrange lists in 2 operations which is the minimum.
+
+Example 2
+
+Input
+
+6
+
+shuffled
+
+Dice the onion
+
+Dice the rice
+
+Pour the onion
+
+Stir the egg
+
+Fold the lettuce
+
+Serve the tomato
+
+original
+
+Pour the onion
+
+Stir the egg
+
+Fold the lettuce
+
+Dice the onion
+
+Dice the rice
+Serve the tomato
+
+Output
+
+1
+
+Explanation
+
+From the input you can see the 6 instructions.
+
+Cut the instructions "Dice The onion" and "Dice the Rice" together and insert it above "Serve the tomato" instructions which results in original instruction list.
+With 1 operation the list can be rearranged and that is the minimum.
